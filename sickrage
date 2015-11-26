@@ -1,0 +1,4 @@
+SR_USER=sickrage
+SR_HOME=/var/sickrage/
+SR_DATA=/var/sickrage/
+#SR_GROUP=si nécessaire

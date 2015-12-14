@@ -23,6 +23,7 @@ RUN apt-get update \
 # Add configuration and scripts
 ADD openvpn/ /etc/openvpn/
 ADD transmission/ /etc/transmission/
+ADD sickrage /etc/sickrage/
 
 ENV OPENVPN_USERNAME=**None** \
     OPENVPN_PASSWORD=**None** \
@@ -99,7 +100,7 @@ ENV OPENVPN_USERNAME=**None** \
     "TRANSMISSION_WATCH_DIR=/data/watch" \
     "TRANSMISSION_WATCH_DIR_ENABLED=true" \
     "TRANSMISSION_HOME=/data/transmission-home" \
-    "SICKRAGE_USERNAME"=username
+    "SICKRAGE_USERNAME="
     
 # Expose port and run
 EXPOSE 9091

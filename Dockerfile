@@ -23,7 +23,7 @@ RUN apt-get update \
 # Add configuration and scripts
 ADD openvpn/ /etc/openvpn/
 ADD transmission/ /etc/transmission/
-ADD sickrage /etc/sickrage/
+ADD sickrage/ /etc/sickrage/
 
 ENV OPENVPN_USERNAME=**None** \
     OPENVPN_PASSWORD=**None** \

@@ -21,6 +21,9 @@ fi
 echo "STARTING TRANSMISSION"
 exec /usr/bin/transmission-daemon -g ${TRANSMISSION_HOME} --logfile ${TRANSMISSION_HOME}/transmission.log &
 
+echo "STARTING SICKRAGE"
+exec /etc/sickrage/start.sh &
+
 if [ "$OPENVPN_PROVIDER" = "PIA" ]
 then
     echo "STARTING PORT UPDATER"

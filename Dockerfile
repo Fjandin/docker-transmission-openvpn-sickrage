@@ -101,10 +101,9 @@ ENV OPENVPN_USERNAME=**None** \
     "TRANSMISSION_WATCH_DIR_ENABLED=true" \
     "TRANSMISSION_HOME=/data/transmission-home" \
     "SICKRAGE_USERNAME="
-    
+
 # Expose port and run
 EXPOSE 9091
 EXPOSE 8081
 
 CMD ["/etc/openvpn/start.sh"]
-CMD ["/etc/sickrage/start.sh"]

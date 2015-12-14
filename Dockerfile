@@ -106,3 +106,4 @@ EXPOSE 9091
 EXPOSE 8081
 
 CMD ["/etc/openvpn/start.sh"]
+CMD ["/etc/sickrage/start.sh"]
